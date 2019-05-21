@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import uploadIcon from "../upload.png";
 import Category from "./category";
 
