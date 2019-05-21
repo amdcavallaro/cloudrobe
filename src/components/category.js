@@ -18,12 +18,14 @@ class Category extends React.Component {
   }
 
   render() {
+    const { hideCategoryItem, randomItem } = this.state;
+    const { data } = this.props;
     return (
       <div>
         <div
           onClick={() =>
             this.setState({
-              hideCategoryItem: !this.state.hideCategoryItem
+              hideCategoryItem: !hideCategoryItem
             })
           }
         >
@@ -31,15 +33,15 @@ class Category extends React.Component {
             alt=""
             height={50}
             width={75}
-            src={this.props.data.content[this.state.randomItem]}
+            src={data.content[randomItem]}
           />
           <div>
-            {`${this.props.data.name} ${this.props.data.content.length}`}
+            {`${data.name} ${data.content.length}`}
           </div>
         </div>
         <div>
           {this.state.hideCategoryItem
-            ? this.props.data.content.map(item => (
+            ? data.content.map(item => (
                 <img height={100} width={125} key={item} alt="" src={item} />
               ))
             : null}
