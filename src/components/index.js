@@ -61,8 +61,8 @@ class Index extends Component {
     return (
       <div>
         <h2> My wardrobe/ closet</h2>
-        {data.map((key, value) => (
-          <Group data={key} />
+        {data.map((key, index) => (
+          <Group data={key} key={index}/>
         ))}
       </div>
     );
