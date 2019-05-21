@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Wardrobey",
+  "name": "Log and choose your outfit with Wardrobey",
   "icons": [
     {
       "src": "favicon.ico",
