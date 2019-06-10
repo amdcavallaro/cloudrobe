@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Group from "./group";
 
-// let groups = [{ name: "top", count: 0 }, { name: "bottoms", count: 1 }];
-
 let data = [
   {
     name: "shoes",
@@ -60,7 +58,7 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <h2> My wardrobe/ closet</h2>
+        <h2> My wardrobe</h2>
         {data.map((key, value) => (
           <Group data={key} />
         ))}

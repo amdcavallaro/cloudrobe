@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import uploadIcon from "../upload.png";
 import Category from "./category";
 
@@ -27,13 +27,22 @@ class Group extends Component {
             this.setState({ hideCategory: !this.state.hideCategory })
           }
         >
-          <div className="group-name">{this.props.data.name}</div>
           <div className="group-image">
-            <img height={30} alt="upload" width={30} src={this.props.data.content[Math.floor(Math.random() * Math.floor(2))].content[Math.floor(Math.random() * Math.floor(2))]} />
+            <img
+              height={30}
+              alt="upload"
+              width={30}
+              src={
+                this.props.data.content[
+                  Math.floor(Math.random() * Math.floor(2))
+                ].content[Math.floor(Math.random() * Math.floor(2))]
+              }
+            />
           </div>
+          <div className="group-name">{this.props.data.name}</div>
           <div className="group-count">
             {this.props.data.content.length !== 0 ? (
-              <p>{this.state.groupSum}</p>
+              <p>{this.state.groupSum} items</p>
             ) : (
               <div>
                 <span>
