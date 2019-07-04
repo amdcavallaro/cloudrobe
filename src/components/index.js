@@ -1,66 +1,39 @@
 import React, { Component } from "react";
 import Group from "./group";
+import { config } from "../firebase/config.js";
 
-let data = [
-  {
-    name: "shoes",
-    content: [
-      {
-        name: "boots",
-        content: [
-          "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-          "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-          "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-        ]
-      },
-      {
-        name: "trainers",
-        content: [
-          "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-          "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-          "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-        ]
-      },
-      {
-        name: "slippers",
-        content: [
-          "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-          "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-          "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-        ]
-      }
-    ]
-  },
-  {
-    name: "gym",
-    content: [
-      {
-        name: "top",
-        content: [
-          "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-          "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-          "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-        ]
-      },
-      {
-        name: "bottoms",
-        content: [
-          "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-          "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-          "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-        ]
-      }
-    ]
-  }
-];
+//config
+var firebase = require("firebase/app");
+require("firebase/auth");
+require("firebase/database");
+
+firebase.initializeApp(config);
+
+const db = firebase.database().ref();
 
 class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: []
+    };
+  }
+  componentDidMount() {
+    // loads data
+    let results = db;
+    results.on("value", snapshot => {
+      snapshot.forEach(data => {
+        this.setState({ data: data.val() });
+      });
+    });
+  }
+
   render() {
     return (
       <div>
-        <h2> My wardrobe</h2>
-        {data.map((key, value) => (
-          <Group data={key} />
+        <h2> My wardrobe </h2>
+        {this.state.data.map((currentItem, index) => (
+          <Group key={index} data={currentItem} />
         ))}
       </div>
     );

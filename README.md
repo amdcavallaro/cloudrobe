@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Live project
+
+It can be found [here](https://my-wardrobe-b2959.firebaseapp.com/).
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
