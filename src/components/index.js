@@ -31,9 +31,9 @@ class Index extends Component {
   render() {
     return (
       <div>
-        <h2> My wardrobe </h2>
-        {this.state.data.map((currentItem, index) => (
-          <Group key={index} data={currentItem} />
+        <h2> My wardrobe/ closet</h2>
+        {data.map((key, index) => (
+          <Group data={key} key={index}/>
         ))}
         <div id="firebaseui-auth-container" />
       </div>

@@ -55,8 +55,8 @@ class Group extends Component {
         <div>
           {this.state.hideCategory ? (
             <div className="group-content">
-              {this.props.data.content.map(key => (
-                <Category data={key} />
+              {this.props.data.content.map((key, index) => (
+                <Category data={key} key={index}/>
               ))}
             </div>
           ) : null}
