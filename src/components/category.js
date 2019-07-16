@@ -1,11 +1,13 @@
 import React from "react";
+import Dropzone from "react-dropzone";
+import FileUploader from "react-firebase-file-uploader";
 
 class Category extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       hideCategoryItem: false,
-      randomItem: 0
+      Item: 0
     };
   }
 
@@ -22,7 +24,42 @@ class Category extends React.Component {
     const { data } = this.props;
     return (
       <div>
+        <label
+          style={{
+            backgroundColor: "steelblue",
+            color: "white",
+            padding: 10,
+            borderRadius: 4,
+            pointer: "cursor"
+          }}
+        >
+          Select your awesome avatar
+          <FileUploader
+            hidden
+            accept="image/*"
+            storageRef={window.firebase.storage().ref("images")}
+            onUploadStart={this.handleUploadStart}
+            onUploadError={this.handleUploadError}
+            onUploadSuccess={(...args) => {
+                console.log(args)
+            }}
+            onProgress={this.handleProgress}
+          />
+        </label>
+
+        <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+          {({ getRootProps, getInputProps }) => (
+            <section>
+              <div {...getRootProps()}>
+                <input {...getInputProps()} />
+                <p>Drag 'n' drop some files here, or click to select files</p>
+              </div>
+            </section>
+          )}
+        </Dropzone>
+
         <div
+        <div className="item"
           onClick={() =>
             this.setState({
               hideCategoryItem: !hideCategoryItem
