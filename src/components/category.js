@@ -57,6 +57,7 @@ class Category extends React.Component {
         </Dropzone>
 
         <div
+        <div className="item"
           onClick={() =>
             this.setState({
               hideCategoryItem: !this.state.hideCategoryItem
