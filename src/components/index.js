@@ -35,6 +35,7 @@ class Index extends Component {
         {this.state.data.map((currentItem, index) => (
           <Group key={index} data={currentItem} />
         ))}
+        <div id="firebaseui-auth-container" />
       </div>
     );
   }
