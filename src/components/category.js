@@ -20,7 +20,7 @@ class Category extends React.Component {
   render() {
     return (
       <div>
-        <div
+        <div className="item"
           onClick={() =>
             this.setState({
               hideCategoryItem: !this.state.hideCategoryItem

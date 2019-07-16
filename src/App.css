@@ -26,7 +26,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 1000px;
-  margin: auto;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .group-image:hover {
@@ -41,4 +42,13 @@
 .group-count {
   font-size: 24px;
   cursor: pointer;
+}
+
+.group-content{
+  display: flex;
+ }
+
+.group-content .item{
+  padding: 10px;
+  border: 1px solid #eee;
 }
