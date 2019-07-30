@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Group from "./group";
 import { config } from "../firebase/config.js";
 
-//config
+// firebase
 var firebase = require("firebase/app");
-require("firebase/auth");
+
 require("firebase/database");
 
 firebase.initializeApp(config);
@@ -18,6 +18,7 @@ class Index extends Component {
       data: []
     };
   }
+
   componentDidMount() {
     // loads data
     let results = db;
@@ -35,7 +36,6 @@ class Index extends Component {
         {this.state.data.map((key, index) => (
           <Group data={key} key={index} />
         ))}
-        <div id="firebaseui-auth-container" />
       </div>
     );
   }
