@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Group from "./group";
-import { config } from "../firebase/config.js";
+import config from "./Firebase/firebase.js";
 
 //config
 var firebase = require("firebase/app");
