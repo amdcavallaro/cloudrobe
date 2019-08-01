@@ -1,6 +1,8 @@
 import React from "react";
 import Router from './routes/Router';
 import styled from 'styled-components';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 const AppWrapper = styled.div`
   text-align: center;
@@ -8,9 +10,11 @@ const AppWrapper = styled.div`
 
 const App = () => {
 	return (
-		<AppWrapper>
-			<Router />
-		</AppWrapper>
+		<Provider store={store}>
+			<AppWrapper>
+				<Router />
+			</AppWrapper>
+		</Provider>
 	);
 };
 

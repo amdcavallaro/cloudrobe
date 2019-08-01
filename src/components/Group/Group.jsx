@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import uploadIcon from '../../assets/upload.png';
-import { Category } from '../';
+import { Category, ClothesImage } from '../';
 import {
     GroupWrapper,
     GroupImage,
@@ -8,6 +7,7 @@ import {
     GroupCount,
     GroupContent
 } from './Group.style';
+import { getRandomItem } from '../../utils/ItemsUtil';
 
 const Group = ({ data }) => {
     const [groupSum, setGroupSum] = useState(0);
@@ -21,14 +21,14 @@ const Group = ({ data }) => {
         <GroupWrapper>
             <div onClick={() => setHideCategory(!hideCategory)}>
                 <GroupImage>
-                    <img
+                    <ClothesImage
                         height={30}
-                        alt="upload"
+                        alt={'upload'}
                         width={30}
                         src={
-                            data.content[
-                                Math.floor(Math.random() * Math.floor(2))
-                            ].content[Math.floor(Math.random() * Math.floor(2))]
+                            data.content[getRandomItem(2)].content[
+                                getRandomItem(2)
+                            ]
                         }
                     />
                 </GroupImage>
@@ -39,11 +39,11 @@ const Group = ({ data }) => {
                     ) : (
                         <div>
                             <span>
-                                <img
+                                <ClothesImage
                                     height={30}
                                     alt="upload"
                                     width={30}
-                                    src={uploadIcon}
+                                    src={'assets/upload.png'}
                                 />
                             </span>
                         </div>

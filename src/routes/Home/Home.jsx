@@ -1,35 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { bootstrapAction } from '../../actions/bootstrapActions';
 
-import config from '../../services/Firebase/firebase.js';
-import { Group } from '../../components';
+import { Group, Spinner } from '../../components';
 import { LABELS } from '../../constants/locale';
 import { Title } from './Home.style';
 
-let firebase = require('firebase/app');
-require('firebase/auth');
-require('firebase/database');
-
-firebase.initializeApp(config);
-
-const db = firebase.database().ref();
-
 const Home = () => {
-    const [dbData, setDbData] = useState(null);
+    const dispatch = useDispatch();
+    const clothesList = useSelector(state => state.config.clothesList);
 
     useEffect(() => {
-        let results = db;
-        results.on('value', snapshot => {
-            snapshot.forEach(data => {
-                setDbData(data.val());
-            });
-        });
+        dispatch(bootstrapAction());
     }, []);
 
     return (
         <>
             <Title>{LABELS.wardrobe}</Title>
-            {dbData !== null &&
-                dbData.map((key, index) => <Group data={key} key={index} />)}
+            {clothesList.length > 0 ? (
+                clothesList.map((key, index) => (
+                    <Group data={key} key={index} />
+                ))
+            ) : (
+                <Spinner />
+            )}
             <div id="firebaseui-auth-container" />
         </>
     );

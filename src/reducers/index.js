@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { clothesReducer } from './clothesReducer';
+import { bootstrapReducer } from './bootstrapReducer';
 
 export default combineReducers({
-    clothes: clothesReducer
+    config: bootstrapReducer
 });
