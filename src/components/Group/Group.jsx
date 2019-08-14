@@ -15,6 +15,7 @@ const Group = ({ data }) => {
 
     useEffect(() => {
         data.content.map(key => setGroupSum(key.content.length));
+        console.log('data', data.content.length);
     }, [data]);
 
     return (
@@ -27,8 +28,16 @@ const Group = ({ data }) => {
                         width={30}
                         src={
                             data.content[
-                                Math.floor(Math.random() * Math.floor(2))
-                            ].content[Math.floor(Math.random() * Math.floor(2))]
+                                Math.floor(
+                                    Math.random() *
+                                        Math.floor(data.content.length - 1)
+                                )
+                            ].content[
+                                Math.floor(
+                                    Math.random() *
+                                        Math.floor(data.content.length - 1)
+                                )
+                            ]
                         }
                     />
                 </GroupImage>
