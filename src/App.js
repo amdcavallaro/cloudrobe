@@ -1,32 +1,21 @@
-import React, { Component } from "react";
-import "./App.css";
-import Index from "./components/index";
+import React from "react";
+import Router from './routes/Router';
+import styled from 'styled-components';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      clothes: 0,
-      shown: true
-    };
-  }
+const AppWrapper = styled.div`
+  text-align: center;
+`;
 
-  toggle() {
-    this.setState({
-      shown: !this.state.shown
-    });
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>My stylist</h1>
-        </header>
-        <Index clothes={this.state.clothes} />
-      </div>
-    );
-  }
-}
+const App = () => {
+	return (
+		<Provider store={store}>
+			<AppWrapper>
+				<Router />
+			</AppWrapper>
+		</Provider>
+	);
+};
 
 export default App;
