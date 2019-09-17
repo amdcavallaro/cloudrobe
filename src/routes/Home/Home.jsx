@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { bootstrapAction } from '../../actions/bootstrapActions';
 
-import { Group, Spinner } from '../../components';
+import { CategoryItem, Button } from '../../components';
+import { CATEGORIES } from '../../constants/settings';
 import { LABELS } from '../../constants/locale';
-import { Title } from './Home.style';
+import { CategoryWrapper } from './Home.style';
 
 const Home = () => {
     const dispatch = useDispatch();
-    const clothesList = useSelector(state => state.config.clothesList);
+    // const clothesList = useSelector(state => state.config.clothesList);
 
     useEffect(() => {
         dispatch(bootstrapAction());
@@ -16,14 +17,13 @@ const Home = () => {
 
     return (
         <>
-            <Title>{LABELS.wardrobe}</Title>
-            {clothesList.length > 0 ? (
-                clothesList.map((key, index) => (
-                    <Group data={key} key={index} />
-                ))
-            ) : (
-                <Spinner />
-            )}
+            <CategoryWrapper>
+                {CATEGORIES.map((key, index) => (
+                    <CategoryItem category={key} key={index} />
+                ))}
+            </CategoryWrapper>
+            <Button label={LABELS.viewAll} />
+            <Button label={LABELS.loadItem} />
             <div id="firebaseui-auth-container" />
         </>
     );
