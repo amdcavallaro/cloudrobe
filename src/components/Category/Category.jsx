@@ -2,20 +2,15 @@ import React, { useState, useEffect } from 'react';
 import Dropzone from 'react-dropzone';
 import { CategoryItem } from './Category.style';
 import { LABELS } from '../../constants/locale';
-import { getRandomItem } from '../../utils/ItemsUtil';
 import { ClothesImage, FileUploaderLabel } from '../';
 
 const Category = ({ data }) => {
     const [hideCategoryItem, setHideCategoryItem] = useState(false);
     const [item, setItem] = useState(0);
 
-    useEffect(() => {
-        setItem(getRandomItem(data.content.length - 1));
-    }, []);
-
     return (
         <div>
-            <FileUploaderLabel />
+            {/* <FileUploaderLabel />
             <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
                 {({ getRootProps, getInputProps }) => (
                     <section>
@@ -49,7 +44,7 @@ const Category = ({ data }) => {
                           ))
                         : null}
                 </div>
-            </CategoryItem>
+            </CategoryItem> */}
         </div>
     );
 };

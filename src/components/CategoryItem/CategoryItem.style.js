@@ -34,6 +34,7 @@ export const CategoryName = styled.div`
     font-weight: 600;
     font-size: 24px;
     cursor: pointer;
+    color: black;
 `;
 
 export const CategoryCount = styled.div`
@@ -41,4 +42,5 @@ export const CategoryCount = styled.div`
     cursor: pointer;
     margin-bottom: 5px;
     font-weight: 500;
+    color: black;
 `;

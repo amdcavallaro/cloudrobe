@@ -5,7 +5,7 @@ import {
 } from '../actions/types';
 
 const initialState = {
-    fetchDbDataStarted: false,
+    fetchDbDataStarted: true,
     fetchDbDataError: '',
     clothesList: [],
 };

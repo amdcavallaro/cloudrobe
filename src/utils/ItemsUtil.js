@@ -1,6 +1,7 @@
-export const getRandomItem = (num) => {
-    if (num === undefined || isNaN(num)) {
-        return 0;
+export const getStringPluralize = (str, num) => {
+    if (num === 1) {
+        return `${str}s`;
     }
-    return Math.floor(Math.random() * Math.floor(num));
-}
+
+    return str;
+};
