@@ -7,15 +7,21 @@ import {
     CategoryDetails
 } from './CategoryItem.style';
 
+import { getStringPluralize } from '../../utils/ItemsUtil';
+
 const CategoryItem = ({ category }) => {
     const [hideCategory, setHideCategory] = useState(false);
+    const { name, content } = category;
 
     return (
         <CategoryWrapper onClick={() => setHideCategory(!hideCategory)}>
-            <CategoryImage main={category}>
+            <CategoryImage main={name}>
                 <CategoryDetails>
-                    <CategoryName>{category}</CategoryName>
-                    <CategoryCount>{`0 items`}</CategoryCount>
+                    <CategoryName>{name}</CategoryName>
+                    <CategoryCount>{`${content.length} ${getStringPluralize(
+                        'item',
+                        content.length
+                    )}`}</CategoryCount>
                 </CategoryDetails>
             </CategoryImage>
         </CategoryWrapper>

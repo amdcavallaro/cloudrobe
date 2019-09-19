@@ -1,31 +1,22 @@
 {
     "data": [
         {
-            "name": "top",
+            "name": "tops",
             "content": [
                 {
-                    "name": "blazers",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "name": "top 1",
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "warm"
                 },
                 {
-                    "name": "tops",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "name": "top 2",
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "cold"
                 },
                 {
-                    "name": "shirts",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "name": "top 3",
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "warm"
                 }
             ]
         },
@@ -34,27 +25,18 @@
             "content": [
                 {
                     "name": "boots",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "cold"
                 },
                 {
                     "name": "trainers",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "warm"
                 },
                 {
                     "name": "slippers",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "warm"
                 }
             ]
         },
@@ -63,19 +45,13 @@
             "content": [
                 {
                     "name": "trausers",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "cold"
                 },
                 {
                     "name": "skirts",
-                    "content": [
-                        "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
-                        "https://www.lulus.com/images/product/xlarge/3163990_373542.jpg?w=560",
-                        "https://media.dollskill.com/media/H9478dpg9lqUgFpf7kH8PQ1IyFdLRHz0-33.jpg"
-                    ]
+                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "type": "warm"
                 }
             ]
         }
