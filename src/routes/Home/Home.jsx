@@ -1,21 +1,15 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { bootstrapAction } from '../../actions/bootstrapActions';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import { CategoryItem, Button, Spinner } from '../../components';
 import { LABELS } from '../../constants/locale';
-import { CategoryWrapper, StyledLink } from './Home.style';
+import { CategoryWrapper, ButtonsWrapper, StyledLink } from './Home.style';
 
 const Home = () => {
-    const dispatch = useDispatch();
     const categoriesList = useSelector(state => state.config.clothesList);
     const isFetchingData = useSelector(
         state => state.config.fetchDbDataStarted
     );
-
-    useEffect(() => {
-        dispatch(bootstrapAction());
-    }, []);
 
     if (isFetchingData) {
         return <Spinner />;
@@ -30,10 +24,12 @@ const Home = () => {
                     </StyledLink>
                 ))}
             </CategoryWrapper>
-            <StyledLink to="/categories/view-all">
-                <Button label={LABELS.viewAll} />
-            </StyledLink>
-            <Button label={LABELS.addItem} />
+            <ButtonsWrapper>
+                <StyledLink to="/categories/view-all">
+                    <Button label={LABELS.viewAll} />
+                </StyledLink>
+                <Button label={LABELS.addItem} />
+            </ButtonsWrapper>
             <div id="firebaseui-auth-container" />
         </>
     );

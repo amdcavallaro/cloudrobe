@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Dropzone from 'react-dropzone';
-import { CategoryItem } from './Category.style';
+import { CategoryItem } from './OldCategory.style';
 import { LABELS } from '../../constants/locale';
-import { ClothesImage, FileUploaderLabel } from '../';
+import { ClothesImage, FileUploaderLabel } from '..';
 
 const Category = ({ data }) => {
     const [hideCategoryItem, setHideCategoryItem] = useState(false);

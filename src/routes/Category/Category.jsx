@@ -1,20 +1,34 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { CategoryContent } from './Category.style';
+import { ClothesImage, Spinner } from '../../components';
+import { getClothesListByCategory } from '../../utils/ItemsUtil';
 
 const Category = ({ match }) => {
     const category = match.params.id;
     const categoriesList = useSelector(state => state.config.clothesList);
+    const isFetchingData = useSelector(
+        state => state.config.fetchDbDataStarted
+    );
 
-    console.log('categoriesList', categoriesList);
+    if (isFetchingData) {
+        return <Spinner />;
+    }
 
     return (
-        <div />
-        // <CategoryContent>
-        //     {category.map((key, index) => (
-        //         <Category data={key} key={index} />
-        //     ))}
-        // </CategoryContent>
+        <CategoryContent>
+            {getClothesListByCategory(categoriesList, category).map(
+                (cloth, index) => (
+                    <ClothesImage
+                        key={index}
+                        width={200}
+                        height={150}
+                        alt={cloth.name}
+                        src={cloth.url}
+                    />
+                )
+            )}
+        </CategoryContent>
     );
 };
 
