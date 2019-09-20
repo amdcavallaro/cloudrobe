@@ -7,6 +7,11 @@ export const CategoryWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+    min-width: 660px;
+`;
+
+export const ButtonsWrapper = styled.div`
+    min-width: 660px;
 `;
 
 export const StyledLink = styled(Link)`

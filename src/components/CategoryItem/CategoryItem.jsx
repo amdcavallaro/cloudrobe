@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     CategoryWrapper,
     CategoryImage,
@@ -10,11 +10,10 @@ import {
 import { getStringPluralize } from '../../utils/ItemsUtil';
 
 const CategoryItem = ({ category }) => {
-    const [hideCategory, setHideCategory] = useState(false);
     const { name, content } = category;
 
     return (
-        <CategoryWrapper onClick={() => setHideCategory(!hideCategory)}>
+        <CategoryWrapper>
             <CategoryImage main={name}>
                 <CategoryDetails>
                     <CategoryName>{name}</CategoryName>

@@ -4,18 +4,18 @@
             "name": "tops",
             "content": [
                 {
-                    "name": "top 1",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "name": "shirt",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110040.jpg?alt=media&token=2b89e0c4-fe66-40e1-9d48-f4b472e401ee",
                     "type": "warm"
                 },
                 {
-                    "name": "top 2",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "name": "coat",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110930.jpg?alt=media&token=22113dd8-7658-428d-9116-9684b2ae087a",
                     "type": "cold"
                 },
                 {
-                    "name": "top 3",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "name": "dress",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110447.jpg?alt=media&token=b6e35eab-6241-44bb-ac38-c0cedef2808f",
                     "type": "warm"
                 }
             ]
@@ -25,17 +25,17 @@
             "content": [
                 {
                     "name": "boots",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_101936.jpg?alt=media&token=279acb9f-e642-4a7f-83db-e47b4d7f6aef",
                     "type": "cold"
                 },
                 {
                     "name": "trainers",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_102505.jpg?alt=media&token=bb325738-0ea6-456a-9745-6399af1dd9b1",
                     "type": "warm"
                 },
                 {
                     "name": "slippers",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_102136.jpg?alt=media&token=b5c8cd29-57b9-41eb-8440-885106b81f91",
                     "type": "warm"
                 }
             ]
@@ -45,12 +45,12 @@
             "content": [
                 {
                     "name": "trausers",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_141220.jpg?alt=media&token=10145179-94ee-4e18-97fb-448c2e0c7d7b",
                     "type": "cold"
                 },
                 {
-                    "name": "skirts",
-                    "url": "https://media.dollskill.com/media/VgkZ1komYitGXz6zGtFWwHJArvJB0xxH-34.jpg",
+                    "name": "skirt",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_141855.jpg?alt=media&token=5e9b4b85-db79-4a80-bc89-bae3854d70e9",
                     "type": "warm"
                 }
             ]
