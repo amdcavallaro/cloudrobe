@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Dropzone from 'react-dropzone';
-import { CategoryItem } from './OldCategory.style';
-import { LABELS } from '../../constants/locale';
-import { ClothesImage, FileUploaderLabel } from '..';
+import React from 'react';
+// import React, { useState, useEffect } from 'react';
+// import Dropzone from 'react-dropzone';
+// import { CategoryItem } from './OldCategory.style';
+// import { LABELS } from '../../constants/locale';
+// import { ClothesImage, FileUploaderLabel } from '..';
 
 const Category = ({ data }) => {
-    const [hideCategoryItem, setHideCategoryItem] = useState(false);
-    const [item, setItem] = useState(0);
+    // const [hideCategoryItem, setHideCategoryItem] = useState(false);
+    // const [item, setItem] = useState(0);
 
     return (
         <div>

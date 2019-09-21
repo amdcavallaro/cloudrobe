@@ -1,23 +1,33 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const CategoryWrapper = styled.div`
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    min-width: 660px;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`
-    min-width: 660px;
+    margin: 5px auto;
+    flex-direction: row;
 `;
 
 export const StyledLink = styled(Link)`
-    text-decoration: none;
+  text-decoration: none;
 
-    &:focus, &:hover, &:visited, &:link, &:active {
-        text-decoration: none;
-    }
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
 `;

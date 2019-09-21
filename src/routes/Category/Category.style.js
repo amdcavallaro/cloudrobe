@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const CategoryContent = styled.div`
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 10px;
+    width: 320px;
+    margin: 10px auto;
+
+    @media only screen and (min-width: 768px) {
+        width: 640px;
+    }
 `;
