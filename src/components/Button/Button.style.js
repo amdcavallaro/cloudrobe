@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ButtonWrapper = styled.button`
     font-weight: 600;
     padding: 8px 8px;
-    margin: auto 10px;
+    margin: 5px 10px;
     text-align: center;
     cursor: pointer;
     color: #FFCC2A;

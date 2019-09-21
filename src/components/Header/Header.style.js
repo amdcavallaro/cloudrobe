@@ -1,19 +1,14 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    background-color: #2C394A;
+    background-color: #212a36;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    width: 100%;
+    margin: 0 auto;
     color: #FFCC2A;
-
-    @media only screen and (min-width: 961px) {
-        width: 960px;
-        min-width: 660px;
-        margin: 0 auto;
-        flex-direction: row;
-    }
 `;
 
 export const BackButton = styled.button`

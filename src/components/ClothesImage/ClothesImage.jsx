@@ -1,8 +1,8 @@
 import React from 'react';
 import { ClothesItem } from './ClothesImage.style';
 
-const ClothesImage = ({ height, alt, width, src }) => {
-    return <ClothesItem height={height} alt={alt} width={width} src={src} />;
+const ClothesImage = ({ alt, src }) => {
+    return <ClothesItem alt={alt} src={src} />;
 };
 
 export default ClothesImage;

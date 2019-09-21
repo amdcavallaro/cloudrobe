@@ -21,8 +21,6 @@ const Category = ({ match }) => {
                 (cloth, index) => (
                     <ClothesImage
                         key={index}
-                        width={200}
-                        height={150}
                         alt={cloth.name}
                         src={cloth.url}
                     />

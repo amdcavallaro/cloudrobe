@@ -9,7 +9,7 @@ export const CategoryImage = styled.div`
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     opacity: 0.9;
     width: 200px;
-    height: 150px;
+    height: 150px; 
 
     display: flex;
     flex-direction: column;
