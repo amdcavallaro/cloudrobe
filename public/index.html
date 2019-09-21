@@ -30,59 +30,6 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script>
-      var config = {
-        apiKey: "AIzaSyADBpag1IoOxqnHRHkcpuAUbdk2ZdzLID4",
-        authDomain: "my-wardrobe-b2959.firebaseapp.com",
-        databaseURL: "https://my-wardrobe-b2959.firebaseio.com",
-        storageBucket: "gs://my-wardrobe-b2959.appspot.com"
-      };
-
-      firebase.initializeApp(config);
-
-    //   var provider = new firebase.auth.GoogleAuthProvider();
-    //   firebase
-    //     .auth()
-    //     .signInWithPopup(provider)
-    //     .then(function(result) {
-    //       // This gives you a Google Access Token. You can use it to access the Google API.
-    //       var token = result.credential.accessToken;
-    //       // The signed-in user info.
-    //       var user = result.user;
-    //       // ...
-    //     })
-    //     .catch(function(error) {
-    //       // Handle Errors here.
-    //       var errorCode = error.code;
-    //       var errorMessage = error.message;
-    //       // The email of the user's account used.
-    //       var email = error.email;
-    //       // The firebase.auth.AuthCredential type that was used.
-    //       var credential = error.credential;
-    //       // ...
-    //     });
-          // FirebaseUI config.
-          var uiConfig = {
-        signInSuccessUrl: '/',
-        signInOptions: [
-          // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID
-        ],
-        // tosUrl and privacyPolicyUrl accept either url string or a callback
-        // function.
-        // Terms of service url/callback.
-        tosUrl: '#',
-        // Privacy policy url/callback.
-        privacyPolicyUrl: function() {
-          window.location.assign('#');
-        }
-      };
-
-      // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      // The start method will wait until the DOM is loaded.
-      ui.start('#firebaseui-auth-container', uiConfig);
-    </script>
     <title>Cloudrobe</title>
   </head>
   <body>
