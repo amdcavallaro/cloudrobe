@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "cloudrobe",
     "public": "build",
     "ignore": [
       "firebase.json",
