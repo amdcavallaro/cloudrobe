@@ -2,14 +2,12 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import { CategoryItem, Button, Spinner } from '../../components';
-import { LABELS } from '../../constants/locale';
 import { CategoryWrapper, ButtonsWrapper, StyledLink } from './Home.style';
+import { LABELS } from '../../constants/locale';
 
 const Home = () => {
     const categoriesList = useSelector(state => state.config.clothesList);
-    const isFetchingData = useSelector(
-        state => state.config.fetchDbDataStarted
-    );
+    const isFetchingData = useSelector(state => state.config.fetchDbDataStarted);
 
     if (isFetchingData) {
         return <Spinner />;
