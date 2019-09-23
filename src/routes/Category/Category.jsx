@@ -18,11 +18,11 @@ const Category = ({ match }) => {
     return (
         <CategoryContent>
             {getClothesListByCategory(categoriesList, category).map(
-                (cloth, index) => (
+                (clothes, index) => (
                     <ClothesImage
                         key={index}
-                        alt={cloth.name}
-                        src={cloth.url}
+                        alt={clothes.name}
+                        src={clothes.url}
                     />
                 )
             )}
