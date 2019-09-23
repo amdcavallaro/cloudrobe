@@ -5,18 +5,23 @@
             "content": [
                 {
                     "name": "shirt",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110040.jpg?alt=media&token=2b89e0c4-fe66-40e1-9d48-f4b472e401ee",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FTops%2Fshirt.jpg?alt=media&token=88cfdc73-dbca-4cf3-842f-2147f1a7906a",
+                    "type": "warm"
+                },
+                {
+                    "name": "shirt0",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FTops%2Fshirt0.jpg?alt=media&token=2f4f8112-4d8f-493e-8624-2eeef167ad73",
+                    "type": "warm"
+                },
+                {
+                    "name": "shirt1",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FTops%2Fshirt1.jpg?alt=media&token=1ca7c492-28ff-4c6b-bf6e-aececa15e526",
                     "type": "warm"
                 },
                 {
                     "name": "coat",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110930.jpg?alt=media&token=22113dd8-7658-428d-9116-9684b2ae087a",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FOuterwear%2Fouter.jpg?alt=media&token=a7695be3-d1b1-4571-bc3d-081e440416bc",
                     "type": "cold"
-                },
-                {
-                    "name": "dress",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_110447.jpg?alt=media&token=b6e35eab-6241-44bb-ac38-c0cedef2808f",
-                    "type": "warm"
                 }
             ]
         },
@@ -24,18 +29,23 @@
             "name": "shoes",
             "content": [
                 {
-                    "name": "boots",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_101936.jpg?alt=media&token=279acb9f-e642-4a7f-83db-e47b4d7f6aef",
-                    "type": "cold"
-                },
-                {
-                    "name": "trainers",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_102505.jpg?alt=media&token=bb325738-0ea6-456a-9745-6399af1dd9b1",
+                    "name": "sandal",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FShoes%2F20190210_101936.jpg?alt=media&token=f93bd55b-d5e7-4145-9ec1-4084f38f8dbf",
                     "type": "warm"
                 },
                 {
+                    "name": "sandal0",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FShoes%2F20190210_102451.jpg?alt=media&token=48a13c3e-0d3f-4bfc-94d2-07f3114e830d",
+                    "type": "warm"
+                },
+                {
+                    "name": "trainers",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FShoes%2F20190210_102505.jpg?alt=media&token=958d7727-901c-4f91-b26b-e7605a6f6f3b",
+                    "type": "cold"
+                },
+                {
                     "name": "slippers",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190210_102136.jpg?alt=media&token=b5c8cd29-57b9-41eb-8440-885106b81f91",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FShoes%2F20190210_102031.jpg?alt=media&token=06e7caf5-630c-42e1-9fa3-dc84db8f477e",
                     "type": "warm"
                 }
             ]
@@ -44,13 +54,23 @@
             "name": "bottoms",
             "content": [
                 {
-                    "name": "trausers",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_141220.jpg?alt=media&token=10145179-94ee-4e18-97fb-448c2e0c7d7b",
+                    "name": "trouser",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FBottoms%2Fbottom.png?alt=media&token=05177e8a-a96a-4819-9b63-336b122e8441",
+                    "type": "cold"
+                },
+                {
+                    "name": "trouser0",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FBottoms%2Fbottom2.jpg?alt=media&token=566ed615-d189-4b45-8112-900b8f01eeae",
                     "type": "cold"
                 },
                 {
                     "name": "skirt",
-                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2F20190202_141855.jpg?alt=media&token=5e9b4b85-db79-4a80-bc89-bae3854d70e9",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FBottoms%2Fbottom3.jpg?alt=media&token=d2d00d1a-ff2b-4a03-9146-e88acdce9aae",
+                    "type": "warm"
+                },
+                {
+                    "name": "skirt",
+                    "url": "https://firebasestorage.googleapis.com/v0/b/my-wardrobe-b2959.appspot.com/o/images%2FBottoms%2Fbottom1.jpg?alt=media&token=8603689a-29f2-4761-a0a4-b5f1673a0dc5",
                     "type": "warm"
                 }
             ]
