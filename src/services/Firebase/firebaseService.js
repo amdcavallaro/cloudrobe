@@ -10,7 +10,5 @@ import config from './firebase.js';
 // Initialize firebase
 firebase.initializeApp(config);
 
-// A constant works too..
-export const getFirebase = () => {
-    return firebase.database().ref();
-}
+// Export root reference.
+export const firebaseReference = firebase.database().ref();
