@@ -1,10 +1,16 @@
+// This import loads the firebase namespace.
+import firebase from 'firebase/app';
+
+// These imports load individual services into the firebase namespace.
+import 'firebase/auth';
+import 'firebase/database';
+
 import config from './firebase.js';
-const firebase = require('firebase/app');
 
+// Initialize firebase
+firebase.initializeApp(config);
+
+// A constant works too..
 export const getFirebase = () => {
-    if (firebase.apps.length === 0) {
-        firebase.initializeApp(config);
-    }
-
     return firebase.database().ref();
 }
