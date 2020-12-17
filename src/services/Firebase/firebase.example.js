@@ -1,5 +1,3 @@
-import "firebase/auth";
-import "firebase/database";
 
 // Set the configuration for your app
 // const prodConfig = {

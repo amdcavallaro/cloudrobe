@@ -4,7 +4,7 @@ import {
     SET_CLOTHES_LIST
 } from './types';
 
-import { getFirebase } from '../services/Firebase/firebaseService';
+import { firebaseReference } from '../services/Firebase/firebaseService';
 
 export const fetchDbDataStart = payload => ({
     type: FETCH_DB_DATA_START,
@@ -24,8 +24,7 @@ export const setClothesList = payload => ({
 export const bootstrapAction = () => dispatch => {
     dispatch(fetchDbDataStart(true));
 
-    const results = getFirebase();
-    results.on('value', snapshot => {
+    firebaseReference.on('value', snapshot => {
         snapshot.forEach(data => {
             dispatch(setClothesList(data.val()));
         });
